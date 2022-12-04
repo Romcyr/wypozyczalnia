@@ -12,10 +12,10 @@
         <!-- DB schema will be updated if needed -->
          <property name="hibernate.hbm2ddl.auto">update</property>
 
-<!--Definicja modeli
-        <mapping class="hibernate.fakturownia.model.Faktura"/>
-        <mapping class="hibernate.fakturownia.model.Kontrahent"/>
-        <mapping class="hibernate.fakturownia.model.Firma"/>
-        <mapping class="hibernate.fakturownia.model.Platnosc"/>-->
+<!--Definicja modeli-->
+        <mapping class="hibernate.model_wypozyczenia.Samochod"/>
+        <mapping class="hibernate.model_wypozyczenia.Klient"/>
+        <mapping class="hibernate.model_wypozyczenia.Wypozyczenie"/>
+        <mapping class="hibernate.model_wypozyczenia.Zwrot"/>
     </session-factory>
 </hibernate-configuration>
