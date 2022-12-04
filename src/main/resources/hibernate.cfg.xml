@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="connection.url">jdbc:mysql://localhost:3306/j133_wypozyczalnia?serverTimezone=Europe/Warsaw&amp;createDatabaseIfNotExist=true</property>
+        <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <property name="connection.username">root</property>
+        <property name="connection.password">Modyfikator12!</property>
+
+        <!-- DB schema will be updated if needed -->
+         <property name="hibernate.hbm2ddl.auto">update</property>
+
+<!--Definicja modeli
+        <mapping class="hibernate.fakturownia.model.Faktura"/>
+        <mapping class="hibernate.fakturownia.model.Kontrahent"/>
+        <mapping class="hibernate.fakturownia.model.Firma"/>
+        <mapping class="hibernate.fakturownia.model.Platnosc"/>-->
+    </session-factory>
+</hibernate-configuration>
